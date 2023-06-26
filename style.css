@@ -1,0 +1,313 @@
+body {
+  background: #3b92a3;
+}
+
+.kawaii-robot {
+  width: 30vw;
+  margin: 10rem auto 0;
+  animation: 2s infinite moment;
+}
+.kawaii-robot .robot-antenna {
+  position: relative;
+  width: 12vw;
+  height: 3vw;
+  background-color: #f3edd6;
+  margin: 0 auto;
+  border-radius: 25%/100% 100% 0 0;
+}
+.kawaii-robot .robot-antenna:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #f3edd6;
+  margin: auto;
+  height: 6vw;
+  width: 1vw;
+  top: -6vw;
+}
+.kawaii-robot .robot-antenna:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #f3edd6;
+  margin: auto;
+  height: 3vw;
+  width: 3vw;
+  top: -8.9vw;
+  border-radius: 50%;
+  animation: 1s infinite signal, 1s infinite background;
+}
+.kawaii-robot .robot-head {
+  border-radius: 50%/100%;
+  width: 30vw;
+  height: 16vw;
+  background-color: #0f2635;
+  box-shadow: inset 0 0 0 1rem #f3edd6;
+  position: relative;
+  margin: 0 auto;
+}
+.kawaii-robot .robot-head:after {
+  content: "";
+  width: 5vw;
+  height: 5vw;
+  top: 0;
+  bottom: 0;
+  background-color: #f3edd6;
+  position: absolute;
+  margin: auto;
+  border-radius: 50%;
+  z-index: -1;
+  left: -2.5vw;
+}
+.kawaii-robot .robot-head:before {
+  content: "";
+  width: 5vw;
+  height: 5vw;
+  top: 0;
+  bottom: 0;
+  background-color: #f3edd6;
+  position: absolute;
+  margin: auto;
+  border-radius: 50%;
+  z-index: -1;
+  right: -2.5vw;
+}
+.kawaii-robot .robot-head .eyes {
+  position: absolute;
+  width: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+.kawaii-robot .robot-head .eyes-left {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: #9ad9cd;
+  animation: 2s infinite eyes;
+}
+.kawaii-robot .robot-head .eyes-right {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: #9ad9cd;
+  animation: 2s infinite eyes;
+}
+.kawaii-robot .robot-head .mouth {
+  position: absolute;
+  width: 2vw;
+  height: 1vw;
+  border-radius: 50%/0 0 100% 100%;
+  background-color: transparent;
+  border-left: 0.8vw solid #9ad9cd;
+  border-right: 0.8vw solid #9ad9cd;
+  border-bottom: 0.8vw solid #9ad9cd;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -3vw;
+}
+.kawaii-robot .robot-head .mouth:before {
+  content: "";
+  width: 0.8vw;
+  height: 0.8vw;
+  position: absolute;
+  top: -0.6vw;
+  background-color: #9ad9cd;
+  border-radius: 50%;
+  left: -0.8vw;
+}
+.kawaii-robot .robot-head .mouth:after {
+  content: "";
+  width: 0.8vw;
+  height: 0.8vw;
+  position: absolute;
+  top: -0.6vw;
+  background-color: #9ad9cd;
+  border-radius: 50%;
+  content: "";
+  right: -0.8vw;
+}
+.kawaii-robot .robot-body {
+  width: 20vw;
+  height: 20vw;
+  background: #f3edd6;
+  border-radius: 50%;
+  position: relative;
+  margin: -1rem auto 0;
+}
+.kawaii-robot .robot-hand-left {
+  position: absolute;
+  width: 4vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: #0f2635;
+  z-index: -1;
+  transform: rotate(50deg);
+  top: -0.5vw;
+  animation: 1s infinite hands;
+  left: -0.3vw;
+}
+.kawaii-robot .robot-hand-right {
+  position: absolute;
+  width: 4vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: #0f2635;
+  z-index: -1;
+  transform: rotate(50deg);
+  top: -0.5vw;
+  animation: 1s infinite hands2;
+  right: -0.3vw;
+}
+.kawaii-robot .robot-leg-left {
+  width: 2.5vw;
+  height: 2.5vw;
+  top: 17vw;
+  bottom: 0;
+  background-color: #0f2635;
+  position: absolute;
+  margin: auto;
+  border-radius: 50%;
+  z-index: -1;
+  left: 3.5vw;
+}
+.kawaii-robot .robot-leg-right {
+  width: 2.5vw;
+  height: 2.5vw;
+  top: 17vw;
+  bottom: 0;
+  background-color: #0f2635;
+  position: absolute;
+  margin: auto;
+  border-radius: 50%;
+  z-index: -1;
+  right: 3.5vw;
+}
+.kawaii-robot .robot-belt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 14vw;
+  height: 7vw;
+  background-color: #0f2635;
+  border-radius: 50%/100%;
+}
+.kawaii-robot .robot-belt:before {
+  content: "";
+  height: 2vw;
+  width: 3.2vw;
+  background-color: #0f2635;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: -3vw;
+}
+.kawaii-robot .robot-belt:after {
+  content: "";
+  height: 2vw;
+  width: 3.2vw;
+  background-color: #0f2635;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: -3vw;
+}
+.kawaii-robot .robot-shadow {
+  width: 25vw;
+  height: 2vw;
+  background: #3ba1b5;
+  border-radius: 50%;
+  margin: 3vw auto 0;
+  animation: 2s infinite shadow-resize;
+}
+
+@keyframes background {
+  from {
+    background-color: #f3edd6;
+  }
+  to {
+    background-color: #0f2635;
+  }
+}
+@keyframes eyes {
+  from {
+    transform: perspective(3vw) scaleY(0);
+  }
+  to {
+    transform: perspective(3vw) scaleY(1);
+  }
+}
+@keyframes signal {
+  0% {
+    box-shadow: 0 0 0 0.2rem #cccccc;
+  }
+  25% {
+    box-shadow: 0 0 0 0.4rem #dfdfdf;
+  }
+  50% {
+    border: 0 0 0 0.6rem #e3e3e3;
+  }
+  75% {
+    box-shadow: 0 0 0 0.8rem #ececec;
+  }
+  100% {
+    box-shadow: 0 0 0 1rem #ededed;
+  }
+}
+@keyframes moment {
+  0% {
+    margin-top: 15vw;
+  }
+  50% {
+    margin-top: 18vw;
+  }
+  100% {
+    margin-top: 15vw;
+  }
+}
+@keyframes shadow-resize {
+  0% {
+    width: 30vw;
+  }
+  50% {
+    width: 25vw;
+  }
+  100% {
+    width: 30vw;
+  }
+}
+@keyframes hands {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+@keyframes hands2 {
+  0% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(-80deg);
+  }
+  100% {
+    transform: rotate(-50deg);
+  }
+}/*# sourceMappingURL=style.css.map */

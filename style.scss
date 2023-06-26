@@ -1,0 +1,318 @@
+$background-color: #3b92a3;
+$white-shade-1: #f3edd6;
+$blue-shade-1: #0f2635;
+$blue-shade-2: #3ba1b5;
+$blue-shade-3: #9ad9cd;
+
+$grey-shade-1: #cccccc;
+$grey-shade-2: #dfdfdf;
+$grey-shade-3: #e3e3e3;
+$grey-shade-4: #ececec;
+$grey-shade-5: #ededed;
+
+@mixin antenna($bg-color, $height, $width) {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: $bg-color;
+  margin: auto;
+  height: $height;
+  width: $width;
+}
+
+@mixin head($bg-color, $height, $width) {
+  content: "";
+  width: $width;
+  height: $height;
+  top: 0;
+  bottom: 0;
+  background-color: $bg-color;
+  position: absolute;
+  margin: auto;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@mixin eyes {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: $blue-shade-3;
+  animation: 2s infinite eyes;
+}
+
+@mixin mouth {
+    content: "";
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    top: -0.6vw;
+    background-color: $blue-shade-3;
+    border-radius: 50%;
+}
+
+@mixin hand($hand-rotate, $hand-animation) {
+    position: absolute;
+    width: 4vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: $blue-shade-1;
+    z-index: -1;
+    transform: rotate(50deg);
+    top: -0.5vw;
+    animation: 1s infinite $hand-animation;
+}
+
+@mixin leg {
+    width: 2.5vw;
+    height: 2.5vw;
+    top: 17vw;
+    bottom: 0;
+    background-color: $blue-shade-1;
+    position: absolute;
+    margin: auto;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@mixin belt {
+    content: "";
+    height: 2vw;
+    width: 3.2vw;
+    background-color: $blue-shade-1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+body {
+  background: $background-color;
+}
+
+.kawaii-robot {
+  width: 30vw;
+  margin: 10rem auto 0;
+  animation: 2s infinite moment;
+  .robot {
+    &-antenna {
+      position: relative;
+      width: 12vw;
+      height: 3vw;
+      background-color: $white-shade-1;
+      margin: 0 auto;
+      border-radius: 25% / 100% 100% 0 0;
+      &:after {
+        @include antenna($white-shade-1, 6vw, 1vw);
+        top: -6vw;
+      }
+      &:before {
+        @include antenna($white-shade-1, 3vw, 3vw);
+        top: -8.9vw;
+        border-radius: 50%;
+        animation: 1s infinite signal, 1s infinite background;
+      }
+    }
+    &-head {
+      border-radius: 50% / 100%;
+      width: 30vw;
+      height: 16vw;
+      background-color: $blue-shade-1;
+      box-shadow: inset 0 0 0 1rem $white-shade-1;
+      position: relative;
+      margin: 0 auto;
+      &:after {
+        @include head($white-shade-1, 5vw, 5vw);
+        left: -2.5vw;
+      }
+      &:before {
+        @include head($white-shade-1, 5vw, 5vw);
+        right: -2.5vw;
+      }
+      & {
+        .eyes {
+          position: absolute;
+          width: 50%;
+          margin: auto;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          height: 3vw;
+          display: flex;
+          justify-content: space-between;
+          &-left {
+            @include eyes;
+          }
+          &-right {
+            @include eyes;
+          }
+        }
+        .mouth {
+          position: absolute;
+          width: 2vw;
+          height: 1vw;
+          border-radius: 50% / 0 0 100% 100%;
+          background-color: transparent;
+          border-left: 0.8vw solid $blue-shade-3;
+          border-right: 0.8vw solid $blue-shade-3;
+          border-bottom: 0.8vw solid $blue-shade-3;
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: -3vw;
+          &:before {
+            @include mouth;
+            left: -0.8vw;
+          }
+          &:after {
+            @include mouth;
+            content: "";
+            right: -0.8vw;
+          }
+        }
+      }
+    }
+    &-body {
+      width: 20vw;
+      height: 20vw;
+      background: $white-shade-1;
+      border-radius: 50%;
+      position: relative;
+      margin: -1rem auto 0;
+    }
+    &-hand {
+      &-left {
+        @include hand(50deg, hands);
+        left: -0.3vw;
+      }
+      &-right {
+        @include hand(-50deg, hands2);
+        right: -0.3vw;
+      }
+    }
+    &-leg {
+      &-left {
+        @include leg;
+        left: 3.5vw;
+      }
+      &-right {
+        @include leg;
+        right: 3.5vw;
+      }
+    }
+    &-belt {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 14vw;
+      height: 7vw;
+      background-color: $blue-shade-1;
+      border-radius: 50% / 100%;
+      &:before {
+        @include belt;
+        left: -3vw;
+      }
+      &:after {
+        @include belt;
+        right: -3vw;
+      }
+    }
+    &-shadow {
+      width: 25vw;
+      height: 2vw;
+      background: $blue-shade-2;
+      border-radius: 50%;
+      margin: 3vw auto 0;
+      animation: 2s infinite shadow-resize;
+    }
+  }
+}
+
+@keyframes background {
+  from {
+    background-color: $white-shade-1;
+  }
+  to {
+    background-color: $blue-shade-1;
+  }
+}
+
+@keyframes eyes {
+  from {
+    transform: perspective(3vw) scaleY(0);
+  }
+  to {
+    transform: perspective(3vw) scaleY(1);
+  }
+}
+
+@keyframes signal {
+  0% {
+    box-shadow: 0 0 0 0.2rem $grey-shade-1;
+  }
+  25% {
+    box-shadow: 0 0 0 0.4rem $grey-shade-2;
+  }
+  50% {
+    border: 0 0 0 0.6rem $grey-shade-3;
+  }
+  75% {
+    box-shadow: 0 0 0 0.8rem $grey-shade-4;
+  }
+  100% {
+    box-shadow: 0 0 0 1rem $grey-shade-5;
+  }
+}
+
+@keyframes moment {
+  0% {
+    margin-top: 15vw;
+  }
+  50% {
+    margin-top: 18vw;
+  }
+  100% {
+    margin-top: 15vw;
+  }
+}
+
+@keyframes shadow-resize {
+  0% {
+    width: 30vw;
+  }
+  50% {
+    width: 25vw;
+  }
+  100% {
+    width: 30vw;
+  }
+}
+
+@keyframes hands {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes hands2 {
+  0% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(-80deg);
+  }
+  100% {
+    transform: rotate(-50deg);
+  }
+}
