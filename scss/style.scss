@@ -1,16 +1,36 @@
-
+@font-face{
+	font-family: 'Metropolis';
+    src: url(fonts/Metropolis-Black.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
-top: 0px;
-left: 0px;
 width: 1920px;
 height: 3122px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 opacity: 1;
-
+}
+.baner{
+	width: 1920px;
+    height: 140px;
 }
 .baner__logo{
+	float:left;
 	padding-top: 26px;
 	padding-left: 30px;
 
+}
+.baner__kontakt{
+	float: left;
+}
+.baner__kontakt--img{
+	float: left;
+	padding-top: 15px;
+	padding-left: 1042px;
+	background-color:lightgreen;
+}
+.baner__kontakt--txt{
+	float: left;
+	font-family: Metropolis;
 }
 
