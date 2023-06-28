@@ -25,6 +25,7 @@ opacity: 1;
 	padding-left: 1042px;
 	width: 501px;
     height: 29px;
+	text-align: left;
 }
 .baner__KONTAKT{
 	float: left;
@@ -32,10 +33,9 @@ opacity: 1;
 }
 .baner__KONTAKT--img{
 	float: left;
-	padding-top: 15px;
-	background-color:lightgreen;
 }
 .baner__KONTAKT--txt{
+	padding-left: 45px;
 	padding-top: 9px;
 	float: left;
 	font-family: Metropolis;
@@ -51,9 +51,7 @@ opacity: 1;
 	font-family: Metropolis;
 }
 .baner__ULUBIONE--img{
-	padding-top: 9px;
 	float: left;
-	font-family: Metropolis;
 }
 .baner__MOJEKONTO{
 	float: left;
@@ -65,8 +63,6 @@ opacity: 1;
 	font-family: Metropolis;
 }
 .baner__MOJEKONTO--img{
-	padding-top: 9px;
 	float: left;
-	font-family: Metropolis;
 }
 

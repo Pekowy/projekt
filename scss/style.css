@@ -27,6 +27,7 @@ body {
   padding-left: 1042px;
   width: 501px;
   height: 29px;
+  text-align: left;
 }
 
 .baner__KONTAKT {
@@ -35,11 +36,10 @@ body {
 
 .baner__KONTAKT--img {
   float: left;
-  padding-top: 15px;
-  background-color: lightgreen;
 }
 
 .baner__KONTAKT--txt {
+  padding-left: 45px;
   padding-top: 9px;
   float: left;
   font-family: Metropolis;
@@ -56,9 +56,7 @@ body {
 }
 
 .baner__ULUBIONE--img {
-  padding-top: 9px;
   float: left;
-  font-family: Metropolis;
 }
 
 .baner__MOJEKONTO {
@@ -72,7 +70,5 @@ body {
 }
 
 .baner__MOJEKONTO--img {
-  padding-top: 9px;
   float: left;
-  font-family: Metropolis;
 }/*# sourceMappingURL=style.css.map */
