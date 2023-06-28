@@ -12,28 +12,67 @@ body {
 }
 
 .baner {
+  padding-top: 26px;
   width: 1920px;
   height: 140px;
 }
 
 .baner__logo {
   float: left;
-  padding-top: 26px;
   padding-left: 30px;
 }
 
-.baner__kontakt {
+.baner__buttons {
+  padding-top: 15px;
+  padding-left: 1042px;
+  width: 501px;
+  height: 29px;
+}
+
+.baner__KONTAKT {
   float: left;
 }
 
-.baner__kontakt--img {
+.baner__KONTAKT--img {
   float: left;
   padding-top: 15px;
-  padding-left: 1042px;
   background-color: lightgreen;
 }
 
-.baner__kontakt--txt {
+.baner__KONTAKT--txt {
+  padding-top: 9px;
+  float: left;
+  font-family: Metropolis;
+}
+
+.baner__ULUBIONE {
+  float: left;
+}
+
+.baner__ULUBIONE--txt {
+  padding-top: 9px;
+  float: left;
+  font-family: Metropolis;
+}
+
+.baner__ULUBIONE--img {
+  padding-top: 9px;
+  float: left;
+  font-family: Metropolis;
+}
+
+.baner__MOJEKONTO {
+  float: left;
+}
+
+.baner__MOJEKONTO--txt {
+  padding-top: 9px;
+  float: left;
+  font-family: Metropolis;
+}
+
+.baner__MOJEKONTO--img {
+  padding-top: 9px;
   float: left;
   font-family: Metropolis;
 }/*# sourceMappingURL=style.css.map */
