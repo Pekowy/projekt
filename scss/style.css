@@ -28,47 +28,45 @@ body {
   width: 501px;
   height: 29px;
   text-align: left;
+  background-color: aqua;
 }
 
-.baner__KONTAKT {
+.baner__kontakt {
   float: left;
 }
 
-.baner__KONTAKT--img {
+.baner__kontakt__img {
   float: left;
 }
 
-.baner__KONTAKT--txt {
+.baner__kontakt__txt {
   padding-left: 45px;
-  padding-top: 9px;
   float: left;
   font-family: Metropolis;
 }
 
-.baner__ULUBIONE {
+.baner__ulubione {
   float: left;
 }
 
-.baner__ULUBIONE--txt {
-  padding-top: 9px;
-  float: left;
-  font-family: Metropolis;
-}
-
-.baner__ULUBIONE--img {
-  float: left;
-}
-
-.baner__MOJEKONTO {
-  float: left;
-}
-
-.baner__MOJEKONTO--txt {
-  padding-top: 9px;
+.baner__ulubione__txt {
   float: left;
   font-family: Metropolis;
 }
 
-.baner__MOJEKONTO--img {
+.baner__ulubione__img {
+  float: left;
+}
+
+.baner__mojekonto {
+  float: left;
+}
+
+.baner__mojekonto__txt {
+  float: left;
+  font-family: Metropolis;
+}
+
+.baner__mojekonto__img {
   float: left;
 }/*# sourceMappingURL=style.css.map */
