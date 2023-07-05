@@ -1,3 +1,4 @@
+
 @font-face{
 	font-family: 'Metropolis';
     src: url(fonts/Metropolis-Black.otf) format('opentype');
@@ -15,9 +16,9 @@ opacity: 1;
 	padding-top: 26px;
 	width: 1920px;
     height: 140px;
+	font-family: Metropolis;
 }
 .header__logo{
-	float:left;
 	padding-left: 30px;
 
 }
@@ -30,9 +31,7 @@ opacity: 1;
 	background-color: aqua;
 }
 .header__kontakt{
-	float: left;
-	
-
+	float: left;	
 }
 .header__kontakt__img{
 	float: left;
@@ -41,7 +40,6 @@ opacity: 1;
 .header__kontakt__txt{
 	padding-left: 45px;
 	float: left;
-	font-family: Metropolis;
 }
 
 .header__ulubione{
@@ -50,7 +48,6 @@ opacity: 1;
 }
 .header__ulubione__txt{
 	float: left;
-	font-family: Metropolis;
 }
 .header__ulubione__img{
 	float: left;
@@ -61,7 +58,6 @@ opacity: 1;
 }
 .header__mojekonto__txt{
 	float: left;
-	font-family: Metropolis;
 }
 .header__mojekonto__img{
 	float: left;

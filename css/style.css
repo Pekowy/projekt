@@ -16,10 +16,10 @@ body {
   padding-top: 26px;
   width: 1920px;
   height: 140px;
+  font-family: Metropolis;
 }
 
 .header__logo {
-  float: left;
   padding-left: 30px;
 }
 
@@ -43,7 +43,6 @@ body {
 .header__kontakt__txt {
   padding-left: 45px;
   float: left;
-  font-family: Metropolis;
 }
 
 .header__ulubione {
@@ -52,7 +51,6 @@ body {
 
 .header__ulubione__txt {
   float: left;
-  font-family: Metropolis;
 }
 
 .header__ulubione__img {
@@ -65,7 +63,6 @@ body {
 
 .header__mojekonto__txt {
   float: left;
-  font-family: Metropolis;
 }
 
 .header__mojekonto__img {
