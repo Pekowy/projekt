@@ -43,7 +43,7 @@ body {
 }
 
 .header__kontakt__txt {
-  padding-left: 45px;
+  padding-top: 9px;
   float: left;
 }
 
@@ -53,6 +53,7 @@ body {
 
 .header__ulubione__txt {
   float: left;
+  padding-top: 9px;
 }
 
 .header__ulubione__img {
@@ -65,6 +66,7 @@ body {
 
 .header__mojekonto__txt {
   float: left;
+  padding-top: 9px;
 }
 
 .header__mojekonto__img {
