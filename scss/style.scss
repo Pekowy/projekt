@@ -10,18 +10,18 @@ height: 3122px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 opacity: 1;
 }
-.baner{
+.header{
 	display: flex;
 	padding-top: 26px;
 	width: 1920px;
     height: 140px;
 }
-.baner__logo{
+.header__logo{
 	float:left;
 	padding-left: 30px;
 
 }
-.baner__buttons{
+.header__buttons{
 	padding-top: 15px;
 	padding-left: 1042px;
 	width: 501px;
@@ -29,41 +29,41 @@ opacity: 1;
 	text-align: left;
 	background-color: aqua;
 }
-.baner__kontakt{
+.header__kontakt{
 	float: left;
 	
 
 }
-.baner__kontakt__img{
+.header__kontakt__img{
 	float: left;
 	
 }
-.baner__kontakt__txt{
+.header__kontakt__txt{
 	padding-left: 45px;
 	float: left;
 	font-family: Metropolis;
 }
 
-.baner__ulubione{
+.header__ulubione{
 	float: left;
 
 }
-.baner__ulubione__txt{
+.header__ulubione__txt{
 	float: left;
 	font-family: Metropolis;
 }
-.baner__ulubione__img{
+.header__ulubione__img{
 	float: left;
 }
-.baner__mojekonto{
+.header__mojekonto{
 	float: left;
 
 }
-.baner__mojekonto__txt{
+.header__mojekonto__txt{
 	float: left;
 	font-family: Metropolis;
 }
-.baner__mojekonto__img{
+.header__mojekonto__img{
 	float: left;
 }
 
