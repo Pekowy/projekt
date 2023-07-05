@@ -13,6 +13,7 @@ body {
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 26px;
   width: 1920px;
   height: 140px;
@@ -24,8 +25,9 @@ body {
 }
 
 .header__buttons {
-  padding-top: 15px;
-  padding-left: 1042px;
+  position: relative;
+  top: 15px;
+  left: 762px;
   width: 501px;
   height: 29px;
   text-align: left;
