@@ -14,10 +14,15 @@ opacity: 1;
 .header{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
 	padding-top: 26px;
 	width: 1920px;
     height: 140px;
 	font-family: Metropolis;
+	letter-spacing: -0.28px;
+	font-size: 14px;
+	position: relative;
+	background-color: rebeccapurple;
 }
 .header__logo{
 	padding-left: 30px;
@@ -30,18 +35,21 @@ opacity: 1;
 	width: 501px;
     height: 29px;
 	text-align: left;
-	background-color: aqua;
+	background-color: greenyellow;
 }
 .header__kontakt{
+	position: relative;
 	float: left;	
 }
 .header__kontakt__img{
-	float: left;
+	position: relative;
+	left: 0px;
 	
 }
 .header__kontakt__txt{
+	position: relative;
 	padding-top: 9px;
-	float: left;
+	left: 45px;
 }
 
 .header__ulubione{
