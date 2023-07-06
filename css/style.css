@@ -43,11 +43,15 @@ body {
 }
 
 .header_nav div {
+  position: relative;
+  top: -9px;
   display: inline-block;
   padding: 0em 1.5em;
 }
 
 .koszyk {
+  position: relative;
+  top: -13px;
   border: 1px solid #E1E2E8;
   width: 254px;
   height: 55px;
@@ -55,8 +59,7 @@ body {
 
 .arrow {
   position: relative;
-  top: -30px;
-  width: 35px;
+  left: -4px;
   height: 55px;
   background-color: #9BCB3B;
 }
