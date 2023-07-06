@@ -9,14 +9,10 @@ body {
   opacity: 1;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   width: 1920px;
   max-width: 100%;
+  height: 140px;
   padding: 20px;
   margin: 26px auto;
   font-family: Metropolis;
@@ -39,8 +35,7 @@ img {
 }
 
 .header_nav ul {
-  margin: 1em 0 0.5em;
-  text-align: center;
+  text-align: left;
 }
 
 .header_nav li {
@@ -49,7 +44,8 @@ img {
 
 .header_nav div {
   display: inline-block;
-  padding: 0.5em 1.5em;
+  margin-top: -5px;
+  padding: 0em 1.5em;
 }
 
 .koszyk {
