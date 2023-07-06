@@ -25,7 +25,6 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: aqua;
 }
 
 .header_logo {
@@ -35,6 +34,7 @@ body {
 }
 
 .header_nav ul {
+  margin-top: -10px;
   text-align: left;
 }
 
@@ -44,12 +44,21 @@ body {
 
 .header_nav div {
   display: inline-block;
-  margin-top: -5px;
   padding: 0em 1.5em;
 }
 
 .koszyk {
   border: 1px solid #E1E2E8;
+  width: 254px;
+  height: 55px;
+}
+
+.arrow {
+  position: relative;
+  top: -30px;
+  width: 35px;
+  height: 55px;
+  background-color: #9BCB3B;
 }
 
 /*# sourceMappingURL=style.css.map */
