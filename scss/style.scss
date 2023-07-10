@@ -5,6 +5,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face{
+	font-family: 'Metropolis1';
+    src: url(fonts/Metropolis-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 background: #FFFFFF 0% 0% no-repeat padding-box;
 opacity: 1;
@@ -15,8 +23,7 @@ opacity: 1;
 	width: 1920px;
 	max-width: 100%;
 	height: 140px;
-	padding: 20px;
-	margin: 26px auto;
+	margin-top: 30px;
 	font-family: Metropolis;
 	letter-spacing: -0.28px;
 	font-size: 14px;
@@ -31,34 +38,32 @@ opacity: 1;
 }
 .header_logo{
 	position: relative;
-	top: -39px;
+	left: 30px;
 	justify-content: flex-start;
 }
 
 .header_nav ul {
-	margin-top: -10px;
 	text-align: left;
 }
 .header_nav li {
-	display: inline;
+	display: flex;
 }
 .header_nav div {
-	position: relative;
-	top: -9px;
 	display: inline-block;
 	padding: 0em 1.5em;
 }
-
-.koszyk{
-	position: relative;
-	top: -13px;
-	border: 1px solid #E1E2E8;
-	width: 254px;
-    height: 55px;
+.header_nav_list{
+	display: flex;
+	align-items: center
 }
-.kosz--pos{
-	position: relative;
-	top: 10px;
+.header_nav_list .koszyk{
+    display: flex;
+    border: 1px solid #E1E2E8;
+    width: 254px;
+    height: 55px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 .koszI{
 	background: #E1E2E8;
@@ -66,16 +71,27 @@ opacity: 1;
 	height: 1px;
 	rotate: 90deg;
 }
+
 .kosztxt--pos{
 	position: relative;
-	top: 0px;
+	top: 6px;
 }
-.arrow{
-	position: relative;
-	left: -4px;
-	height: 55px;
+.price{
+	font-family: Metropolis1;
+}
+
+.header_nav_list .arrow{
+	display: flex;
+	align-items: center;
+	height: 57px;
 	background-color: #9BCB3B;
 }
-.arrow--pos{
+ .arrow--pos{
 	position: relative;
+}
+.header_bottom{
+	border-top: 1px solid #E1E2E8;
+	width: 1920px;
+	height: 57px;
+	justify-content: space-evenly;
 }
