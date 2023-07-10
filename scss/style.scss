@@ -48,6 +48,7 @@ opacity: 1;
 	display: inline-block;
 	padding: 0em 1.5em;
 }
+
 .koszyk{
 	position: relative;
 	top: -13px;
@@ -55,9 +56,26 @@ opacity: 1;
 	width: 254px;
     height: 55px;
 }
+.kosz--pos{
+	position: relative;
+	top: 10px;
+}
+.koszI{
+	background: #E1E2E8;
+	width: 1px;
+	height: 1px;
+	rotate: 90deg;
+}
+.kosztxt--pos{
+	position: relative;
+	top: 0px;
+}
 .arrow{
 	position: relative;
 	left: -4px;
 	height: 55px;
 	background-color: #9BCB3B;
+}
+.arrow--pos{
+	position: relative;
 }
