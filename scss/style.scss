@@ -1,14 +1,14 @@
 
 @font-face{
 	font-family: 'Metropolis';
-    src: url(fonts/Metropolis-Black.otf) format('opentype');
+    src: url(./fonts/Metropolis-Black.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
 	font-family: 'Metropolis1';
-    src: url(fonts/Metropolis-Regular.otf) format('opentype');
+    src: url(./fonts/Metropolis-Regular.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -45,17 +45,17 @@ opacity: 1;
 .header_nav ul {
 	text-align: left;
 }
+
 .header_nav li {
-	display: flex;
-}
-.header_nav div {
 	display: inline-block;
 	padding: 0em 1.5em;
 }
+
 .header_nav_list{
 	display: flex;
 	align-items: center
 }
+
 .header_nav_list .koszyk{
     display: flex;
     border: 1px solid #E1E2E8;
@@ -65,16 +65,24 @@ opacity: 1;
     align-items: center;
     justify-content: flex-start;
 }
+
+.kosz--pos{
+	position: relative;
+
+}
+
 .koszI{
+	position: relative;
 	background: #E1E2E8;
 	width: 1px;
-	height: 1px;
-	rotate: 90deg;
+    height: 41px;
+	left: 30px;
 }
 
 .kosztxt--pos{
 	position: relative;
 	top: 6px;
+	left: 60px;
 }
 .price{
 	font-family: Metropolis1;
